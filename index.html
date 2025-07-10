@@ -2,71 +2,154 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="One Call AC Service – Expert AC repair, installation, AMC in Chennai" />
-  <title>One Call AC Service</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>One Call AC Service | AC Service in Chennai</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Rubik', sans-serif;
+      background: linear-gradient(to right, #e0f7fa, #fce4ec);
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #007ACC, #00BCD4);
+      color: white;
+      padding: 40px 0;
+      text-align: center;
+    }
+    nav {
+      background: #00ACC1;
+      text-align: center;
+      padding: 15px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #ffd600;
+    }
+    .container {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    h2 {
+      color: #007ACC;
+      margin-bottom: 20px;
+    }
+    .service-box {
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .service-box:hover {
+      transform: scale(1.02);
+    }
+    .testimonials p {
+      background: #ffffff;
+      border-left: 6px solid #00ACC1;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 6px;
+      font-style: italic;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 15px;
+      margin-bottom: 20px;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+    form button {
+      background: #007ACC;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    form button:hover {
+      background: #005B9F;
+    }
+    footer {
+      background: #263238;
+      color: white;
+      text-align: center;
+      padding: 30px 0;
+      margin-top: 60px;
+    }
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>One Call AC Service</h1>
-    <p>Your trusted AC service partner in Chennai</p>
+    <p>Your Trusted AC Installation & Repair Partner in Chennai</p>
   </header>
-
   <nav>
     <a href="#services">Services</a>
-    <a href="#about">Why Us</a>
-    <a href="#gallery">Gallery</a>
+    <a href="#testimonials">Testimonials</a>
     <a href="#contact">Contact</a>
   </nav>
 
-  <section id="services" class="container">
-    <h2>Our Services</h2>
-    <div class="cards">
-      <div class="card"><h3>AC Repair</h3><p>Fast, same‑day repair & troubleshooting.</p></div>
-      <div class="card"><h3>Installation</h3><p>Expert split/window/inverter AC install.</p></div>
-      <div class="card"><h3>Gas Refill & Maintenance</h3><p>Gas top‑up, AMC & tune‑ups.</p></div>
-    </div>
-  </section>
+  <div class="container">
+    <section id="services" class="services">
+      <h2>Our Services</h2>
+      <div class="service-box">
+        <h3>AC Installation</h3>
+        <p>Quick and professional installation for split, window and inverter ACs. Enjoy hassle-free setup with our expert team.</p>
+      </div>
+      <div class="service-box">
+        <h3>AC Repair</h3>
+        <p>Expert troubleshooting and repair for all AC issues. We fix cooling, noise, and power issues quickly and reliably.</p>
+      </div>
+      <div class="service-box">
+        <h3>Annual Maintenance</h3>
+        <p>Affordable AMC packages to keep your AC running efficiently throughout the year.</p>
+      </div>
+    </section>
 
-  <section id="about" class="container">
-    <h2>Why Choose Us?</h2>
-    <ul>
-      <li>Quick 2 hour response time ⏱</li>
-      <li>Lowest inspection charges (₹99–₹149)</li>
-      <li>Guarantee: 30–90 day repair warranty :contentReference[oaicite:6]{index=6}</li>
-      <li>Trained technicians, transparent pricing :contentReference[oaicite:7]{index=7}</li>
-    </ul>
-  </section>
+    <section id="testimonials" class="testimonials">
+      <h2>Customer Testimonials</h2>
+      <p>"Excellent service! They came the same day and fixed my AC in 30 minutes." – Ramesh K.</p>
+      <p>"Reliable and affordable. Highly recommended!" – Priya D.</p>
+    </section>
 
-  <section id="gallery" class="container">
-    <h2>Gallery</h2>
-    <div class="gallery">
-      <img src="images/tech1.jpg" alt="AC technician servicing unit" />
-      <img src="images/tech2.jpg" alt="AC coil cleaning" />
-      <img src="images/tech3.jpg" alt="AC installation work" />
-      <img src="images/tech4.jpg" alt="Happy customer after service" />
-    </div>
-  </section>
-
-  <section id="contact" class="container">
-    <h2>Contact Us</h2>
-    <form id="contactForm">
-      <input type="text" name="name" placeholder="Name" required />
-      <input type="tel" name="phone" placeholder="Phone" required />
-      <input type="email" name="email" placeholder="Email" required />
-      <textarea name="message" placeholder="How can we help?" rows="4" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-    <p><strong>Phone:</strong> +91‑72006 15708 • <strong>Email:</strong> khaninagoor@gmail.com</p>
-    <p><strong>Address:</strong> Chennai, Tamil Nadu</p>
-  </section>
+    <section id="contact" class="contact">
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <p><strong>Phone:</strong> +91-XXXXXXXXXX<br>
+         <strong>Email:</strong> support@onecallac.com<br>
+         <strong>Location:</strong> Chennai, Tamil Nadu</p>
+    </section>
+  </div>
 
   <footer>
-    <p>© 2025 One Call AC Service | AC Service in Chennai. All rights reserved.</p>
+    <p>&copy; 2025 One Call AC Service | AC Service in Chennai. All rights reserved.</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
-
